@@ -1,0 +1,16 @@
+<aside>
+    <section class="main-aside-avatar">
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1589879435029&di=23ac6a49d6e882021fa8e83f74cacb3a&imgtype=0&src=http%3A%2F%2Fn.sinaimg.cn%2Fsinacn10%2F375%2Fw500h675%2F20181106%2F6307-hnknmqx5660208.jpg"
+            alt="">
+    </section>
+    <ul>
+        <li><a href="/edit">撰写文章</a></li>
+        <li><a href="/about">关于博客</a></li>
+        <li><a href="/friends">友情链接</a></li>
+        <% if(user) { %>
+        <li><a href="/logout">退出博客</a></li>
+        <% } else { %>
+        <li><a href="/login">登录博客</a></li>  
+        <% } %>
+    </ul>
+</aside>
